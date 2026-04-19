@@ -1,0 +1,184 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #4b0082, #000000);
+}
+
+#wrapper {
+    width: 95%;
+    margin: auto;
+    padding: 20px;
+}
+
+header {
+    border: 2px solid #333;
+    text-align: center;
+    padding: 25px;
+    margin-bottom: 20px;
+    background-color: white;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3em;
+}
+
+#logo {
+    width: 90px;
+    height: 90px;
+    border: 2px solid #333;
+    text-align: center;
+    line-height: 90px;
+    float: left;
+    background-color: white;
+}
+
+nav {
+    margin-left: 110px;
+    border: 2px solid #333;
+    background-color: white;
+    margin-bottom: 25px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    flex: 1;
+    text-align: center;
+}
+
+nav a {
+    display: block;
+    padding: 18px;
+    text-decoration: none;
+    color: black;
+    font-size: 1.1em;
+}
+
+nav a:hover {
+    background-color: #dcdcdc;
+}
+
+main {
+    clear: both;
+}
+
+.box {
+    border: 2px solid #333;
+    background-color: white;
+}
+
+.hero {
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 35px;
+    border: 2px solid #333;
+    background-color: white;
+}
+
+.hero h2 {
+    font-size: 4em;
+}
+
+.info-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.small-box {
+    width: 42%;
+    padding: 30px;
+    text-align: center;
+    font-size: 1.3em;
+}
+
+.image-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.image-box {
+    width: 48%;
+    height: 420px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-box h2 {
+    font-size: 4em;
+}
+
+footer {
+    border: 2px solid #333;
+    background-color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.2em;
+}
+
+.hero img,
+.image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#logo {
+    width: 90px;
+    height: 90px;
+    border: 2px solid #333;
+    float: left;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+@media (max-width: 900px) {
+
+    #logo {
+        float: none;
+        margin: auto auto 15px auto;
+    }
+
+    nav {
+        margin-left: 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    .info-row,
+    .image-row {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .small-box,
+    .image-box {
+        width: 100%;
+    }
+}
